@@ -1,7 +1,6 @@
 import React from 'react';
 
-const MyApp = ({ Component, pageProps }) => (
-  <>
+const MyApp = ({ Component, pageProps }) => <>
     <div className="menuIconContainer">
       <img className="logo" src="logo_icon.png" alt="addendum logo" />
       <div className="title">Addendum</div>
@@ -46,6 +45,5 @@ const MyApp = ({ Component, pageProps }) => (
       `}
     </style>
   </>
-);
 
 export default MyApp;
