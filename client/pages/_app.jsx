@@ -5,7 +5,6 @@ const MyApp = ({ Component, pageProps }) => {
     <>
       <div className="menuIconContainer">
         <img className="logo" src="addendum_logo.png" />
-        <div className="title">Addendum</div>
       </div>
       <Component />
       <style global jsx>
