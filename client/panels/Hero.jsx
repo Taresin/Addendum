@@ -14,10 +14,10 @@ const Hero = () => (
     </div>
     <style jsx>{`
       .container {
-        background-color: aquamarine;
+        padding: 20px;
       }
       .wrapper {
-        padding: 20px;
+        box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
         max-width: 500px;
         margin: 0 auto;
         padding: 20px;
