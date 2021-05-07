@@ -1,15 +1,14 @@
 import React from 'react';
 
-const MyApp = ({ Component, pageProps }) => {
-  return (
-    <>
-      <div className="menuIconContainer">
-        <img className="logo" src="logo_icon.png" alt="addendum logo"/>
-        <div className="title">Addendum</div>
-      </div>
-      <Component />
-      <style global jsx>
-        {`
+const MyApp = ({ Component, pageProps }) => (
+  <>
+    <div className="menuIconContainer">
+      <img className="logo" src="logo_icon.png" alt="addendum logo" />
+      <div className="title">Addendum</div>
+    </div>
+    <Component />
+    <style global jsx>
+      {`
           body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -23,8 +22,9 @@ const MyApp = ({ Component, pageProps }) => {
               monospace;
           }
         `}
-      </style>
-      <style jsx>{`
+    </style>
+    <style jsx>
+      {`
         .menuIconContainer {
           display: flex;
           justify-content: center;
@@ -43,9 +43,9 @@ const MyApp = ({ Component, pageProps }) => {
           font-size: 24px;
           font-weight: bold;
         }
-      `}</style>
-    </>
-  );
-};
+      `}
+    </style>
+  </>
+);
 
 export default MyApp;
