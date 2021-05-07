@@ -4,15 +4,12 @@ const Hero = () => (
   <>
     <div className="container">
       <div className="wrapper">
-        <p className="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className="description">
+            <p> Decipher your mumbo jumbo cryto transactions! </p>
+            <p> Be able to quickly track and review your crypto investments in a language that you actually understand! </p>
+            <p> Add addendum mask to your browser. </p>
+            <p> Transform to easy to read etherscan transactions </p>
+        </div>
       </div>
     </div>
     <style jsx>{`
@@ -24,9 +21,11 @@ const Hero = () => (
         margin: 0 auto;
         padding: 20px;
         border-radius: 4px;
-        background-color: aquamarine;
       }
       .description {
+        text-align: center;
+      }
+      .description > p {
         margin: 0;
       }
     `}</style>
