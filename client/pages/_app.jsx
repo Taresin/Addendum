@@ -4,7 +4,8 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <div className="menuIconContainer">
-        <img className="logo" src="addendum_logo.png" alt="addendum logo"/>
+        <img className="logo" src="logo_icon.png" alt="addendum logo"/>
+        <div className="title">Addendum</div>
       </div>
       <Component />
       <style global jsx>
@@ -34,11 +35,13 @@ const MyApp = ({ Component, pageProps }) => {
           z-index: 2;
         }
         .logo {
-          width: 80px;
+          width: 40px;
+          height: 40px;
           margin-right: 10px;
         }
         .title {
           font-size: 24px;
+          font-weight: bold;
         }
       `}</style>
     </>
