@@ -4,8 +4,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <div className="menuIconContainer">
-        <img className="logo" src="addendum_logo.png" />
-        <div className="title">Addendum</div>
+        <img className="logo" src="addendum_logo.png" alt="addendum logo"/>
       </div>
       <Component />
       <style global jsx>
