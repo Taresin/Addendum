@@ -8,7 +8,7 @@ const Hero = () => (
             <p> Decipher your mumbo jumbo cryto transactions! </p>
             <p> Be able to quickly track and review your crypto investments in a language that you actually understand! </p>
             <p> Add addendum mask to your browser. </p>
-            <p> Transform to easy to read etherscan transactions </p>
+            <p> Transform to easy to read etherscan transactions. </p>
         </div>
       </div>
     </div>
