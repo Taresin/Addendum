@@ -3,6 +3,10 @@ import React from 'react';
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
+      <div className="menuIconContainer">
+        <img className="logo" src="addendum_logo.png" />
+        <div className="title">Addendum</div>
+      </div>
       <Component />
       <style global jsx>
         {`
@@ -20,6 +24,24 @@ const MyApp = ({ Component, pageProps }) => {
           }
         `}
       </style>
+      <style jsx>{`
+        .menuIconContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          width: 100%;
+          padding: 9.7px 0;
+          z-index: 2;
+        }
+        .logo {
+          width: 80px;
+          margin-right: 10px;
+        }
+        .title {
+          font-size: 24px;
+        }
+      `}</style>
     </>
   );
 };
