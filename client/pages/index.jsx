@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import dynamic from 'next/dynamic';
 
 import Hero from '../panels/Hero';
-import dynamic from 'next/dynamic';
+import Goto from '../panels/Goto';
+
 const Slider = dynamic(() => import('../panels/Slider'), {
   ssr: false,
 });
@@ -10,7 +12,9 @@ const Home = () => (
   <>
     <Hero />
     <Slider />
-    <style jsx>{``}</style>
+    <Goto />
+    {/* eslint-disable-line no-alert */}
+    <style jsx>{' '}</style>
   </>
 );
 
