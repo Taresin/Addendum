@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Hero from '../panels/Hero';
+
 const Home = () => (
   <>
-    <div className="container">Hello Addemdum</div>
+    <Hero />
     <style jsx>{``}</style>
   </>
 );
