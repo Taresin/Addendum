@@ -3,6 +3,8 @@ pragma solidity 0.8.4;
 
 contract Addendum {
   
+  event OrderCreated(address user);
+
   address payable public owner;
 
   struct Order{
@@ -17,13 +19,11 @@ contract Addendum {
     address desiredAddress, 
     uint timeStart, 
     uint timeEnd
-    ) public payable {
-    require (msg.value >= 0.001 ether);
-    owner.transfer(msg.value);
-
+  ) public payable {      
     pendingOrders[msg.sender].client = desiredAddress;
     pendingOrders[msg.sender].timeStart = timeStart;
     pendingOrders[msg.sender].timeEnd = timeEnd;
+    emit OrderCreated(desiredAddress);
   }
 
 }

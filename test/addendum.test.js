@@ -9,19 +9,8 @@ contract("Addendum", (accounts) => {
 
   describe("Ordering", async () => {
     it("Make order", async () => {
-      await contract.orderTranscript(accounts[0], 0, 100).send(
-        {
-          from: accounts[0],
-          gas: 40000,
-          value: 10000000000,
-        },
-        function (err, result) {
-          console.log(err);
-          console.log(result);
-        }
-      );
-
-      var x = contract.pendingOrders(accounts[0]);
+      await contract.orderTranscript(accounts[0], 0, 100);
+      var x = await contract.pendingOrders(accounts[0]);
       console.log(x);
       // assert.equal(totalSupply, 0, "total supply is correct");
 
