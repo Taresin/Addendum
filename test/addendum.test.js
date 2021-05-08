@@ -10,9 +10,6 @@ contract("Addendum", (accounts) => {
   describe("Ordering", async () => {
     it("Make order", async () => {
       const tx = await contract.createOrder(accounts[0], 0, 100);
-      var x = await contract.pendingOrders(accounts[0]);
-      console.log(x);
-      console.log(tx);
 
       const { logs } = tx;
       assert.ok(Array.isArray(logs));
@@ -20,10 +17,23 @@ contract("Addendum", (accounts) => {
 
       const log = logs[0];
       assert.equal(log.event, "OrderCreated");
+      assert.equal(log.args.user.toString(), accounts[0]);
     });
 
     it("Fulfilled order", async () => {
-      await contract.fulfillOrder(accounts[0], "https://www.google.com");
+      const tx = await contract.fulfillOrder(
+        accounts[0],
+        "https://www.google.com"
+      );
+
+      const { logs } = tx;
+      assert.ok(Array.isArray(logs));
+      assert.equal(logs.length, 1);
+
+      const log = logs[0];
+      assert.equal(log.event, "OrderFulfilled");
+      assert.equal(log.args.user.toString(), accounts[0]);
+      assert.equal(log.args.url, "https://www.google.com");
     });
   });
 });
