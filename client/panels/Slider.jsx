@@ -7,8 +7,8 @@ const Slider = () => (
     <div className="container">
       <div className="wrapper">
         <BeforeAfterSlider
-          before={'/placeholders/1.jpg'}
-          after={'/placeholders/2.jpg'}
+          before={'/eth1.jpg'}
+          after={'/eth2.jpg'}
           width={1000}
           height={500}
         />
