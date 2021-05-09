@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Goto = () => <>
     <div className="container">
         <div className="wrapper">
-            <Link href="/app"> Start now! </Link>
+            <Link href="/app"> Add Addendum now! </Link>
         </div>
     </div>
     <style jsx>{`

@@ -26,9 +26,7 @@ const Consumer = () => {
     console.log(context.active);
     return (
       <p>
-        {" "}
-        State: {context.active ? "Active" : "Inactive"}, Account:{" "}
-        {context.account}{" "}
+        State: {context.active ? "Active" : "Inactive"}, Account: {context.account}
       </p>
     );
   }

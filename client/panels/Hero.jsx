@@ -5,10 +5,9 @@ const Hero = () => (
     <div className="container">
       <div className="wrapper">
         <div className="description">
-            <p> Decipher your mumbo jumbo cryto transactions! </p>
+            <p> Decipher your mumbo jumbo crypto transactions! </p>
             <p> Be able to quickly track and review your crypto investments in a language that you actually understand! </p>
-            <p> Add addendum mask to your browser. </p>
-            <p> Transform to easy to read etherscan transactions. </p>
+            <p> Add addendum mask to your browser and transform to easily read your etherscan transactions and export your transaction data to .csv for financial analysis. </p>
         </div>
       </div>
     </div>
